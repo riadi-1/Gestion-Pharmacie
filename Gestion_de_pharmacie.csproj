@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F25E4FA7-56B0-433F-916C-CFA6AC292346}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_de_pharmacie</RootNamespace>
+    <AssemblyName>Gestion_de_pharmacie</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net40\FontAwesome.Sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archive.Designer.cs">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commande.Designer.cs">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DeskTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeskTop.Designer.cs">
+      <DependentUpon>DeskTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fam_Medic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fam_Medic.Designer.cs">
+      <DependentUpon>fam_Medic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fourinisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fourinisseur.Designer.cs">
+      <DependentUpon>fourinisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="imprimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imprimer.Designer.cs">
+      <DependentUpon>imprimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicam.Designer.cs">
+      <DependentUpon>medicam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vente.Designer.cs">
+      <DependentUpon>Vente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vente1.Designer.cs">
+      <DependentUpon>Vente1.cs</DependentUpon>
+    </Compile>
+    <None Include="resources\tmp_1592834223236.jpg" />
+    <EmbeddedResource Include="Archive.resx">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imprimer.resx">
+      <DependentUpon>imprimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vente1.resx">
+      <DependentUpon>Vente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="resources\HomeLogo.png" />
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commande.resx">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeskTop.resx">
+      <DependentUpon>DeskTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fam_Medic.resx">
+      <DependentUpon>fam_Medic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fourinisseur.resx">
+      <DependentUpon>fourinisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicam.resx">
+      <DependentUpon>medicam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vente.resx">
+      <DependentUpon>Vente.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
